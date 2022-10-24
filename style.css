@@ -35,7 +35,7 @@ aside {
 }
 
 aside section {
-    min-width: 350px;
+    min-width: 360px;
     background-color: var(--background-color-section);
     padding: 30px;
     border-radius: 20px;
@@ -109,19 +109,38 @@ main h1{
     border-radius: 20px;
     text-align: center;
     padding-bottom: 15px;
-    min-width: 350px;
+    min-width: 360px;
     
 }
 
-@media(max-width: 1016px) {
+@media(max-width: 1045px) {
     main {
         width: 100%;
         margin-top: 30px;
-        padding: 20px;
+        padding-left: 0;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    aside section{
+        width: 50%;
+        margin: 0 auto;
+        max-width: 484px;
     }
 
     main h1 {
         text-align: center;
+    }
+
+    .my-projects {
+        grid-template-columns: 1fr;
+    }
+
+    .my-projects article {
+        width: 50%;
+        margin: 0 auto;
     }
 
 }
@@ -130,14 +149,7 @@ main h1{
     main {
         padding: 0;
     }
-    .my-projects {
-        grid-template-columns: 1fr;
-    }
 
-    .my-projects article {
-        width: 75%;
-        margin: 0 auto;
-    }
 }
 
 .my-projects article img {
