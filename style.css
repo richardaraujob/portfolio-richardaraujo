@@ -180,8 +180,3 @@ a {
 a:hover {
     color: #555266;
 }
-
-.my-projects article div span {
-    display: block;
-    border-left: 2px solid #CB92B1;
-}
