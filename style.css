@@ -169,6 +169,7 @@ main h1{
 .my-projects article div p {
     font-size: 14px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 a {
@@ -178,4 +179,9 @@ a {
 
 a:hover {
     color: #555266;
+}
+
+.my-projects article div span {
+    display: block;
+    border-left: 2px solid #CB92B1;
 }
