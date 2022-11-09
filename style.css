@@ -25,7 +25,8 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 aside {
@@ -35,9 +36,9 @@ aside {
 }
 
 aside section {
-    min-width: 360px;
+    min-width: 340px;
     background-color: var(--background-color-section);
-    padding: 30px;
+    padding: 25px;
     border-radius: 20px;
 }
 
@@ -89,33 +90,35 @@ aside section {
 main {
     width: 65%;
     padding-left: 30px;
-    margin-bottom: 40px;
 }
-
 
 main h1{
     font-size: 30px;
+    text-align: center;
 }
 
 .my-projects {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 30px;
 }
 
 .my-projects article {
     background-color: var(--background-color-section);
     border-radius: 20px;
     width: 100%;
-    min-width: 360px;
+    min-width: 340px;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
-@media(max-width: 1045px) {
+@media(max-width: 989px) {
     main {
         width: 100%;
         margin-top: 30px;
-        padding-right: 30px;
+        padding: 0;
+        margin: 30px;
     }
 
     aside {
@@ -127,44 +130,17 @@ main h1{
         margin: 0 auto;
         max-width: 484px;
     }
-
-    main h1 {
-        text-align: center;
-    }
-
 }
 
 .my-projects article img {
-    width: 50%;
-    height: 100%;
-    border-radius: 20px 0 0 20px;
-    float: left;
-    margin-right: 20px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;   
 }
 
 .my-projects article div {
-    margin-top: 54px;
-}
-
-@media(max-width: 434px) {
-    .my-projects article img {
-        width: 100%;
-        border-radius: 20px 20px 0 0;
-        margin-right: 0;
-        margin-bottom: 30px;
-    }
-
-    .my-projects article {
-        padding-bottom: 30px;
-        text-align: center;
-        width: 360px;
-        margin: 0 auto;
-    }
-
-    main {
-        padding: 0;
-    }
-
+    margin-top: 30px;
 }
 
 .my-projects article div p {
